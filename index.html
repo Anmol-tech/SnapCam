@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SnapCam</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="video-container">
+			<canvas id="draw-canvas"> </canvas>
+			<canvas id="video-canvas">
+				<video autoplay></video>
+			</canvas>
+		</div>
+		<div class="controls">
+			<div class="scale">
+				<div><i class="fas fa-plus"></i></div>
+				<div><i class="fas fa-minus"></i></div>
+			</div>
+			<div id="recordBtn">
+				<div class="record-animate"></div>
+			</div>
+			<div id="captureBtn">
+				<div class="capture-animate"></div>
+			</div>
+			<div class="editMode">
+				<i class="fas fa-edit"></i>
+			</div>
+			<div id="gallery-btn">
+				<i class="fas fa-photo-video"></i>
+			</div>
+		</div>
+		<div class="draw-tool">
+			<div id="pen-tools">
+				<div id="pen">
+					<i class="fas fa-pen"></i>
+				</div>
+				<div id="show-pen-color">
+					<input type="color" id="pen-color" />
+				</div>
+			</div>
+			<div id="eraser">
+				<i class="fas fa-eraser"></i>
+			</div>
+			<div class="width">
+				<div class="small">
+					<i class="fas fa-circle"></i>
+				</div>
+				<div class="mid">
+					<i class="fas fa-circle"></i>
+				</div>
+				<div class="large">
+					<i class="fas fa-circle"></i>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://unpkg.com/merge-images"></script>
+	<script src="./mediaUtil.js"></script>
+	<script src="./script.js"></script>
+	<script src="./db.js"></script>
+	<script src="./draw.js"></script>
+</html>
