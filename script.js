@@ -1,5 +1,5 @@
 let videoPlayer = document.querySelector("video");
-let constraint = { video: true };
+let constraint = { video: true, audio: true };
 let recordBtn = document.querySelector("#recordBtn");
 let captureBtn = document.querySelector("#captureBtn");
 let isRecording = false;

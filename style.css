@@ -161,9 +161,7 @@
 .oncapture {
 	animation: pulse 1s infinite;
 }
-.gallery {
-	
-}
+
 @keyframes pulse {
 	0% {
 		opacity: 0.9;
